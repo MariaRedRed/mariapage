@@ -44,15 +44,21 @@
 				</li>
 				
 				
+
 				<li class="nav-item dropdown myDropdown">
 					<a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">  LOCATION DESIGN | BACKGROUND  </a>
 					<ul class="dropdown-menu dropdown-menu-dark">
-						<li> <a class="dropdown-item" href="TheCupheadShow.html"> THE CUPHEAD SHOW!</a></li>
+						
+						<a class="dropdown-item" href="#" onclick="mostrarFormulario()">THE CUPHEAD SHOW!</a>
 						<li> <a class="dropdown-item" href="Goodboy.html"> GOOD BOY </a></li>
 						
 					</ul>
 				</li>
-				
+				<div id="formulario" style="display: none;">
+					<h2 class="text-danger">Please enter the password to access:</h2>
+					<input type="password" id="password">
+					<button onclick="verificarPassword()">Acceder</button>
+				</div>
 				
 				<li class="nav-item dropdown myDropdown">
 					<a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">  SKETCHBOOK | STUDIES   </a>
@@ -73,7 +79,6 @@
 	</div>
 		
 </nav>
-
 
 </header>
 <!-- Begin page content -->
