@@ -176,7 +176,23 @@
 		});
 	  });
 	</script>	
-		
+ <script>
+        function mostrarFormulario() {
+            var formulario = document.getElementById("formulario");
+            formulario.style.display = "block";
+        }
+
+        function verificarPassword() {
+            var contraseñaIngresada = document.getElementById("password").value;
+            var contraseñaCorrecta = "Taw46557"; // Reemplaza "tucontraseña" con la contraseña real
+
+            if (contraseñaIngresada === contraseñaCorrecta) {
+                window.location.href = "TheCupheadShow.html"; // Reemplaza con la URL del enlace protegido
+            } else {
+                alert("Contraseña incorrecta. Por favor, inténtalo nuevamente.");
+            }
+        }
+    </script>		
 		
 	</body>
 	</html>
