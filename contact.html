@@ -12,72 +12,72 @@
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
     <link rel="stylesheet" href = "./CSS/main_CSS.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<link rel="icon" href="image/LOGO_FORTESQUE_icono.ico" type="image/x-icon">
     
 </head>
 
 
 <body style="background-color: rgb(15, 15, 15);">
 <main>
-
-<!-- Navbar -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-black">
-	<div class="container-fluid">
-		<a class="navbar-brand" href="index.html"><img src="image/LOGO_FORTESQUE.png" width="40"  alt="LOGO-FORTESQUE"/></a>
-		<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav"  aria-expanded="false" aria-label="Toggle navigation">
-		<span class="navbar-toggler-icon"></span>
-		</button>
-		<div class="collapse navbar-collapse justify-content-center" id="main_nav">
-			<ul class="navbar-nav">
-				
-				<li class="nav-item active"> <a class="nav-link" href="index.html">HOME </a> </li>
-				
-				
-				<li class="nav-item dropdown myDropdown">
-					<a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">   VISUAL DEVELOPMENT | CONCEPT ART  </a>
-					<ul class="dropdown-menu dropdown-menu-dark">
-							<li> <a class="dropdown-item" href="treasure.html"> TREASURE TREKKERS S1 </a></li>
-							<li><a class="dropdown-item" href="pandora.html"> PANDORA-CHAIN OF CHAOS </a></li>
-							<li><a class="dropdown-item" href="AXDragon.html"> IF I HAD AN AX+DRAGON </a></li>
-							<li><a class="dropdown-item" href="personalwork.html"> PERSONAL WORK </a></li>
-					</ul>
-				</li>
-				
-				
-
-				<li class="nav-item dropdown myDropdown">
-					<a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">  BACKGROUND DESIGN  </a>
-					<ul class="dropdown-menu dropdown-menu-dark">
-						
-						<a class="dropdown-item" href="#" onclick="mostrarFormulario()">THE CUPHEAD SHOW!</a>
-						<li> <a class="dropdown-item" href="Goodboy.html"> GOOD BOY </a></li>
-						
-					</ul>
-				</li>
+	            <!-- Formulario de contraseña -->
 				<div id="formulario" style="display: none;">
-					<h2 class="text-danger">Please enter the password to access:</h2>
+					<h2 class="text-danger">Password</h2>
 					<input type="password" id="password">
-					<button onclick="verificarPassword()">Access</button>
+					<button onclick="verificarPassword()">Acceder</button>
 				</div>
-				
-				<li class="nav-item dropdown myDropdown">
-					<a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">  SKETCHBOOK | STUDIES   </a>
-					<ul class="dropdown-menu dropdown-menu-dark">
-						<li> <a class="dropdown-item" href="Traditional.html"> TRADITIONAL </a></li>
-						<li><a class="dropdown-item" href="Digital.html"> DIGITAL </a></li>
-						
-					</ul>
-				</li>
 
-				<li class="nav-item"><a class="nav-link" href="about.html"> ABOUT </a></li>
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-black">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html"><img src="image/LOGO_FORTESQUE.png" width="40" alt="LOGO-FORTESQUE" /></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-center" id="main_nav">
+                    <ul class="navbar-nav">
 
-				<li class="nav-item"><a class="nav-link" href="contact.html"> CONTACT </a></li>
-				
-			</ul>
-		</div>
-	
-	</div>
-		
-</nav>
+                        <li class="nav-item active"> <a class="nav-link" href="index.html">HOME </a> </li>
+
+                        <li class="nav-item dropdown myDropdown">
+                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"> PERSONAL WORK </a>
+                            <ul class="dropdown-menu dropdown-menu-dark">
+
+                                <li><a class="dropdown-item" href="AXDragon.html"> IF I HAD AN AX+DRAGON </a></li>
+                                <li><a class="dropdown-item" href="personalwork.html"> MISC </a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item dropdown myDropdown">
+                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"> PROJECTS </a>
+                            <ul class="dropdown-menu dropdown-menu-dark">
+                                <a class="dropdown-item" href="#" onclick="mostrarFormulario('RICK & MORTY S7')">RICK & MORTY S7</a>
+                                <a class="dropdown-item" href="#" onclick="mostrarFormulario('THE CUPHEAD SHOW!')">THE CUPHEAD SHOW!</a>
+                                <li> <a class="dropdown-item" href="Goodboy.html"> GOOD BOY </a></li>
+                                <li> <a class="dropdown-item" href="treasure.html"> TREASURE TREKKERS S1 </a></li>
+                                <li><a class="dropdown-item" href="pandora.html"> PANDORA-CHAIN OF CHAOS </a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item dropdown myDropdown">
+                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"> SKETCHBOOK </a>
+                            <ul class="dropdown-menu dropdown-menu-dark">
+                                <li> <a class="dropdown-item" href="Traditional.html"> TRADITIONAL </a></li>
+                                <li><a class="dropdown-item" href="Digital.html"> DIGITAL </a></li>
+
+                            </ul>
+                        </li>
+
+                        <li class="nav-item"><a class="nav-link" href="about.html"> ABOUT </a></li>
+
+                        <li class="nav-item"><a class="nav-link" href="contact.html"> CONTACT </a></li>
+
+                    </ul>
+                </div>
+
+            </div>
+
+        </nav>
+
 
 
 <!-- Head_proyects -->
@@ -142,7 +142,7 @@
 			<a class="btn btn-outline-danger btn-floating m-1" href="https://www.instagram.com/artmariared/" role="button"><img src="image/icon_social/iconos-instagram.png" width="20" alt=""/></a>
 
 			<!-- Discord -->
-			<a class="btn btn-outline-danger btn-floating m-1" href="http://discordapp.com/users/518512588640878613" role="button"><i class="fab fa-discord"><img src="image/icon_social/iconos-discord.png" width="20" alt=""/></i></a>
+			<a class="btn btn-outline-danger btn-floating m-1" href="#!" role="button"><i class="fab fa-discord"><img src="image/icon_social/iconos-discord.png" width="20" alt=""/></i></a>
 
 			<!-- Vimeo -->
 			<a class="btn btn-outline-danger btn-floating m-1" href="https://vimeo.com/mariared " role="button"><i class="fab fa-vimeo"><img src="image/icon_social/iconos-vimeo.png" width="20" alt=""/></i></a>
@@ -174,30 +174,45 @@
 		  
 		
 		
-	<script>
-	  $(document).ready(function() {
-		$('.zoomable-image').click(function() {
-		  $(this).toggleClass('zoomed');
-		});
-	  });
-	</script>	
- <script>
-        function mostrarFormulario() {
-            var formulario = document.getElementById("formulario");
-            formulario.style.display = "block";
-        }
+<script>
+	function mostrarFormulario(proyecto) {
+		var formulario = document.getElementById("formulario");
+		formulario.style.display = "block";
 
-        function verificarPassword() {
-            var contraseñaIngresada = document.getElementById("password").value;
-            var contraseñaCorrecta = "Taw46557"; // Reemplaza "tucontraseña" con la contraseña real
+		
+		proyectoActual = proyecto;
+	}
 
-            if (contraseñaIngresada === contraseñaCorrecta) {
-                window.location.href = "TheCupheadShow.html"; // Reemplaza con la URL del enlace protegido
-            } else {
-                alert("Contraseña incorrecta. Por favor, inténtalo nuevamente.");
-            }
-        }
-    </script>		
+	function verificarPassword() {
+		var contraseñaIngresada = document.getElementById("password").value;
+		var contraseñaCorrecta = "Taw46557"; 
+
+		if (contraseñaIngresada === contraseñaCorrecta) {
+			
+			var paginaDestino = obtenerPaginaDestino(proyectoActual);
+
+			
+			window.location.href = paginaDestino;
+		} else {
+			alert("Incorrect password. Please try again.");
+		}
+	}
+
+   
+	function obtenerPaginaDestino(proyecto) {
+	  
+		switch (proyecto) {
+			case "RICK & MORTY S7":
+				return "Rick&Morty.html";
+			case "THE CUPHEAD SHOW!":
+				return "TheCupheadShow.html";
+		   
+			default:
+				return "OtraPagina.html";
+		}
+	}
+</script>
+		
 		
 	</body>
 	</html>
