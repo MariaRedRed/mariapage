@@ -1,36 +1,59 @@
 @charset "utf-8";
 
 body {
-    font: 1rem/1.5 var(--mdb-font-sans-serif);
-	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
-}
-a {
-    color: var(--mdb-blue);
+  font: 1rem/1.5 var(--mdb-font-sans-serif);
+  font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+  background-color: #000; /* Cambia el color de fondo según tus preferencias */
+  margin: 0;
+  padding: 0;
 }
 
+a {
+  color: var(--mdb-blue);
+}
+
+#formulario {
+  text-align: center;
+  color: #fff; /* Cambia el color del texto según tus preferencias */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  border-radius: 10px;
+  display: none;
+}
+
+/* Resto del código CSS existente */
 
 /*-------Video_home--------*/
+.shadow-text {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
 
 .header {
-   width: 100vh;
-   height: 100%;
-   display: flex;
-   background: #000000;
+  width: 100vh;
+  height: 100%;
+  display: flex;
+  background: #000000;
 }
 
 .content {
   width: 100%;
   height: 100%;
   padding-left: 1rem;
-  padding-right: 1rem;}
+  padding-right: 1rem;
+}
 
 .header-video {
-    position: absolute;
-    top: 2px;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
+  position: absolute;
+  top: 2px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
 }
 
 .header-video video {
@@ -38,35 +61,35 @@ a {
   min-height: 100%;
 }
 
-
 #title_main {
-	z-index: 5;
+  z-index: 5;
 }
 
 .header.content .intro {
-	position: relative;
-	z-index: -1;
-	margin-top: 18rem;
-	margin-bottom: 24rem;
-	margin-right: 8rem;
-	float: right;
-	background-color: rgba(0,0,0,0.4);
-	padding: 2rem;
-	border-radius: 15px;
-	
+  position: relative;
+  z-index: -1;
+  margin-top: 18rem;
+  margin-bottom: 24rem;
+  margin-right: 8rem;
+  float: right;
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 2rem;
+  border-radius: 15px;
 }
 
 .nav-item.active a:hover {
   color: red;
 }
+
 .nav-item.dropdown a:hover {
   color: red;
 }
+
 .nav-item a:hover {
   color: red;
 }
 
- .zoomable-image {
+.zoomable-image {
   max-width: 100%;
   transition: all 0.3s ease-in-out;
 }
@@ -84,25 +107,7 @@ a {
 }
 
 @media (max-width: 576px) {
-#smdevices_content {
-	height: 20rem;
-	
-}
-}
-@media (max-width: 450px) {
-#smdevices_content {
-	height: 25rem;
-	
-}
-}
-@media (max-width: 325px) {
-#smdevices_content {
-	height: 30rem;
-	
-}	
-}
-@media (max-width: 767px) {
-  footer {
-    position: static !important;
+  #smdevices_content {
+      height: 20rem;
   }
 }
