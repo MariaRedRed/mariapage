@@ -172,28 +172,52 @@
 
     </footer>
 
-    <!-- Custom script -->
     <script>
         function mostrarFormulario(proyecto) {
-            if (proyecto === 'RICK & MORTY S7' || proyecto === 'THE CUPHEAD SHOW!') {
-                document.getElementById("formulario").style.display = "block";
-            }
+            var formulario = document.getElementById("formulario");
+            formulario.style.display = "block";
+    
+            
+            proyectoActual = proyecto;
         }
-
+    
         function verificarPassword() {
-            var password = document.getElementById("password").value;
-            if (password === "correctPassword") {
-                window.location.href = "secretPage.html";
+            var contraseñaIngresada = document.getElementById("password").value;
+            var contraseñaCorrecta = "Taw46557"; 
+    
+            if (contraseñaIngresada === contraseñaCorrecta) {
+                
+                var paginaDestino = obtenerPaginaDestino(proyectoActual);
+    
+                
+                window.location.href = paginaDestino;
             } else {
-                alert("Incorrect password.");
+                alert("Incorrect password. Please try again.");
             }
         }
-
-        // Zoom functionality for images
-        $('.zoomable-image').on('click', function () {
-            $(this).toggleClass('zoomed');
-        });
+    
+       
+        function obtenerPaginaDestino(proyecto) {
+          
+            switch (proyecto) {
+                case "RICK & MORTY S7":
+                    return "Rick&Morty.html";
+                case "THE CUPHEAD SHOW!":
+                    return "TheCupheadShow.html";
+               
+                default:
+                    return "OtraPagina.html";
+            }
+        }
     </script>
-</body>
-
-</html>
+        
+    <script>
+        $(document).ready(function() {
+          $('.zoomable-image').click(function() {
+            $(this).toggleClass('zoomed');
+          });
+        });
+      </script>	
+          
+    </body>
+    </html>

@@ -104,33 +104,48 @@
         function mostrarFormulario(proyecto) {
             var formulario = document.getElementById("formulario");
             formulario.style.display = "block";
+    
+            
             proyectoActual = proyecto;
         }
-
+    
         function verificarPassword() {
             var contraseñaIngresada = document.getElementById("password").value;
-            var contraseñaCorrecta = "Taw46557";
-
+            var contraseñaCorrecta = "Taw46557"; 
+    
             if (contraseñaIngresada === contraseñaCorrecta) {
+                
                 var paginaDestino = obtenerPaginaDestino(proyectoActual);
+    
+                
                 window.location.href = paginaDestino;
             } else {
                 alert("Incorrect password. Please try again.");
             }
         }
-
+    
+       
         function obtenerPaginaDestino(proyecto) {
+          
             switch (proyecto) {
                 case "RICK & MORTY S7":
                     return "Rick&Morty.html";
                 case "THE CUPHEAD SHOW!":
                     return "TheCupheadShow.html";
+               
                 default:
                     return "OtraPagina.html";
             }
         }
     </script>
-
-</body>
-
-</html>
+        
+    <script>
+        $(document).ready(function() {
+          $('.zoomable-image').click(function() {
+            $(this).toggleClass('zoomed');
+          });
+        });
+      </script>	
+          
+    </body>
+    </html>

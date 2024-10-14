@@ -156,30 +156,30 @@
 	  </footer>	
 	
 	
-	  <script>
+      <script>
         function mostrarFormulario(proyecto) {
             var formulario = document.getElementById("formulario");
             formulario.style.display = "block";
-
+    
             
             proyectoActual = proyecto;
         }
-
+    
         function verificarPassword() {
             var contraseñaIngresada = document.getElementById("password").value;
             var contraseñaCorrecta = "Taw46557"; 
-
+    
             if (contraseñaIngresada === contraseñaCorrecta) {
                 
                 var paginaDestino = obtenerPaginaDestino(proyectoActual);
-
+    
                 
                 window.location.href = paginaDestino;
             } else {
                 alert("Incorrect password. Please try again.");
             }
         }
-
+    
        
         function obtenerPaginaDestino(proyecto) {
           
@@ -194,6 +194,7 @@
             }
         }
     </script>
+        
     <script>
         $(document).ready(function() {
           $('.zoomable-image').click(function() {
@@ -201,6 +202,6 @@
           });
         });
       </script>	
-	
-</body>
-</html>
+          
+    </body>
+    </html>
